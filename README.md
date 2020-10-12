@@ -1,4 +1,4 @@
-Compiling the program
+Compile the program
 =====================
 rc d1.rc  
 cl client.c d1.res user32.lib  
