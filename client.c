@@ -52,6 +52,11 @@ DlgProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam) {
 					break;
 			}
 			break;
+		case WM_COPYDATA:
+			//	PostQuitMessage(0);
+					SetDlgItemText(hDlg,IDC_EDIT1,(char*)(
+			                  ((COPYDATASTRUCT*)lParam)->lpData));
+break;			
 		default:
 			return FALSE;
 	}
